@@ -3,10 +3,15 @@
 
 <div class="home-container">
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem mi, semper eget libero nec, faucibus suscipit lectus. Etiam tincidunt interdum rhoncus. Mauris eleifend pretium enim, eget dignissim ex. Integer lacus lacus, gravida sit amet nisi vel, pretium posuere dolor. Quisque ligula eros, posuere at efficitur eu, blandit vel libero.</p>
-  <br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem mi,
-  <br>semper eget libero nec, faucibus suscipit lectus. Etiam tincidunt interdum rhoncus.
-  <br>Mauris eleifend pretium enim, eget dignissim ex. Integer lacus lacus, gravida sit amet nisi vel, pretium posuere dolor.
-  <br>Quisque ligula eros, posuere at efficitur eu, blandit vel libero.</p>
+<h3>What I'm currently working on: </h3>
+  <%= link_to project_path(@project) do %>
+    <h5><%= @project.name %></h5>
+  <% end %>
+
+<h3>What I'm currently learning: </h3>
+  <ul>
+    <li>Web accessibility</li>
+    <li>React.js</li>
+  </ul>
+
 </div>
