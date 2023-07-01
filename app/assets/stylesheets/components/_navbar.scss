@@ -4,7 +4,6 @@
   background: $white;
   font-family: $body-font;
   font-size: 20px;
-  border-bottom: solid $yellow 3px;
   padding: 3px;
 
 
@@ -15,15 +14,18 @@
     color: $navy;
 
     &:hover {
-      color: $yellow;
+      color: $teal;
     }
   }
 
-  .nav-link {
-    color: $pink;
+  .nav-item {
+    color: $navy;
+    padding-left: 12px;
+  }
 
+  .nav-link {
     &:hover {
-      color: $yellow;
+      color: $teal;
     }
   }
 }
