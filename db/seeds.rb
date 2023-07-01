@@ -4,6 +4,7 @@ Project.destroy_all
 puts "Creating frontrow project..."
 
 project = Project.new
+project.features = ["Concert seeds created by BandsInTown API", "Search by band and/or city", "Filter for upcoming shows", "Mark attendance", "Post a review", "Like or comment other reviews", "View other fans profiles", "Follow other fans", "Message other fans", "Edit own profile"]
 project.start_date = Date.new(2023, 06, 05)
 project.end_date = Date.new(2023, 06, 16)
 project.label = "Collaborative"
