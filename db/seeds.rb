@@ -21,6 +21,7 @@ puts "frontrow project created"
 puts "Creating pawsh project..."
 
 project = Project.new
+project.features = ["Browse all outfits", "Search by title, occasion, description using keywords", "View outfit on map", "Book an outfit", "List a new outfit for rent", "Accept or decline incoming requests"]
 project.start_date = Date.new(2023, 05, 29)
 project.end_date = Date.new(2023, 06, 02)
 project.label = "Collaborative"

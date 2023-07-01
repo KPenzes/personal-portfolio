@@ -1,1 +1,7 @@
 <h1>Projects index</h1>
+
+<% @projects.each do |project| %>
+  <%= link_to project_path(project) do %>
+    <h5><%= project.name %></h5>
+  <% end %>
+<% end %>
