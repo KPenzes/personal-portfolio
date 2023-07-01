@@ -34,3 +34,17 @@ project.github_url = "https://github.com/catagalan-mtl/pawsh"
 project.save!
 
 puts "pawsh project created"
+
+puts "Creating Portfolio project..."
+
+project = Project.new
+project.start_date = Date.new(2023, 06, 28)
+project.label = "Independent"
+project.name = "Personal portfolio"
+project.project_url = "https://kpenzes-portfolio-199d9b9ccdf5.herokuapp.com/"
+project.description = "A website that showcases all of my web development projects, providing details and insights."
+project.github_url = "https://github.com/KPenzes/personal-portfolio"
+
+project.save!
+
+puts "portfolio project created"
