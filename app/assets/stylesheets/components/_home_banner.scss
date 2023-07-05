@@ -1,7 +1,7 @@
 .home-banner {
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 180px 0;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -9,7 +9,7 @@
 }
 
 .home-banner h1 {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   color: $navy;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   font-family: $headers-font;
@@ -19,4 +19,21 @@
   color: $navy;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   font-family: $headers-font;
+}
+
+.home-banner-btn {
+  background-color: $yellow;
+  font-size: 20px;
+  color: $navy;
+  width: 70%;
+  padding: 10px 0;
+  margin-top: 20px;
+  box-shadow: 0px 0px 14px white;
+
+    &btn:hover {
+      background-color: $yellow;
+      opacity: .9;
+      box-shadow: 0px 0px 14px $teal;
+    }
+
 }
