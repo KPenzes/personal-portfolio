@@ -1,7 +1,6 @@
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="card project-details col-11 col-lg-7">
-
       <div class="details">
 
         <div class="details-flex">
@@ -13,27 +12,39 @@
 
         <div class="details-flex">
           <p><%= @project.tagline %></p>
-          <p><%= @project.start_date %> - <%= @project.end_date %></p>
+          <% if @project.end_date.present? %>
+            <p><%= @project.start_date.to_formatted_s(:short) %> - <%= @project.end_date.to_formatted_s(:short) %></p>
+          <% else %>
+            <p><%= @project.start_date.to_formatted_s(:short) %> - present </p>
+          <% end %>
         </div>
-
       </div>
 
-        <p><%= @project.description %></p>
+        <h5>Description</h5>
+          <p><%= @project.description %></p>
 
-    <ul>
-      <% @project.features.each do |feature| %>
-        <li><%= feature %></li>
-      <% end %>
-    </ul>
+        <h5>Features</h5>
+          <ul>
+            <% @project.features.each do |feature| %>
+              <li><%= feature %></li>
+            <% end %>
+          </ul>
 
-    <p><%= @project.project_url %></p>
-    <p><%= @project.github_url %></p>
+        <div class="details-flex">
+          <%= link_to "FrontRow", @project.project_url, class:"btn" %>
+          <%= link_to "GitHub", @project.github_url, class:"btn" %>
+        </div>
+
 
     </div>
 
     <div class="card col-11 col-lg-4">
-      <% @project.photos.each do |photo| %>
-        <%= cl_image_tag photo.key %>
+      <% if @project.photos.present? %>
+        <% @project.photos.each do |photo| %>
+          <%= cl_image_tag photo.key %>
+        <% end %>
+      <% else %>
+        <p>Sorry, no photos to display.</p>
       <% end %>
     </div>
   </div>
