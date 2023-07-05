@@ -5,23 +5,30 @@
   <div class="row justify-content-center">
 
     <div class="card-home col-11 col-lg-5">
-      <div class="card-home-infos">
-        <h3>What I'm currently working on: </h3>
-          <%= link_to project_path(@project) do %>
-            <h5><%= @project.name %></h5>
-          <% end %>
-          <p><%= @project.label %></p>
-          <p><%= @project.description %></p>
-      </div>
+        <div class="card-home-infos">
+          <h2>Currently working on: </h2>
+            <div class="card-title">
+              <p><%= @project.name %></p>
+            </div>
+            <div class="label">
+              <p><%= @project.label %> project</p>
+            </div>
+            <p><%= @project.description %></p>
+        </div>
     </div>
 
-     <div class="card-home col-11 col-lg-5">
+
+    <div class="card-home col-11 col-lg-5">
       <div class="card-home-infos">
-        <h3>What I'm currently learning: </h3>
-          <ul>
-            <li>Web accessibility</li>
-            <li>React.js</li>
-          </ul>
+        <h2>Currently learning: </h2>
+          <div class="card-title">
+            <p>Web accessibility</p>
+          </div>
+            <p>A successful website is an accessible website - I'm learning how to make a website accessible and inclusive.</p>
+          <div class="card-title">
+            <p>React.js</p>
+          </div>
+            <p>I'm focusing on expanding and improving my front-end skills, starting with learning the React framework to use with my next project.</p>
       </div>
     </div>
 

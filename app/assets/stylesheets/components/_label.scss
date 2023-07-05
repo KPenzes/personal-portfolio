@@ -1,0 +1,15 @@
+.label {
+  background-color: $pink;
+  padding: 5px;
+  color: white;
+  border-radius: 2px;
+  width: fit-content;
+  text-align: center;
+  text-justify: center;
+  margin-bottom: 10px;
+
+  p {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}

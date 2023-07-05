@@ -4,20 +4,27 @@
   align-items: center;
   border-radius: 3px;
   margin: 10px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
-.card-home h3 {
-  font-size: 20px;
-  font-weight: bold;
+
+.card-title p {
+  font-size: 23px;
+  color: $teal;
+  margin-bottom: 8px;
 }
 
-.card-home li {
-  font-size: 12px;
-  line-height: 1.4;
-  // opacity: .7;
-  // margin-bottom: 0;
-  // margin-top: 8px;
-}
 
 .card-home .card-home-infos {
   padding: 16px;
