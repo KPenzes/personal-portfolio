@@ -1,0 +1,23 @@
+.card-home {
+  background: white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  align-items: center;
+  border-radius: 3px;
+}
+
+.card-home h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-home li {
+  font-size: 12px;
+  line-height: 1.4;
+  // opacity: .7;
+  // margin-bottom: 0;
+  // margin-top: 8px;
+}
+
+.card-home .card-home-infos {
+  padding: 16px;
+}

@@ -1,17 +1,30 @@
 <%= render "layouts/home_banner" %>
 
-
 <div class="home-container">
 
-<h3>What I'm currently working on: </h3>
-  <%= link_to project_path(@project) do %>
-    <h5><%= @project.name %></h5>
-  <% end %>
+  <div class="row">
 
-<h3>What I'm currently learning: </h3>
-  <ul>
-    <li>Web accessibility</li>
-    <li>React.js</li>
-  </ul>
+    <div class="card-home col-12 col-lg-6">
+      <div class="card-home-infos">
+        <h3>What I'm currently working on: </h3>
+          <%= link_to project_path(@project) do %>
+            <h5><%= @project.name %></h5>
+          <% end %>
+          <p><%= @project.label %></p>
+          <p><%= @project.description %></p>
+      </div>
+    </div>
+
+     <div class="card-home col-12 col-lg-6">
+      <div class="card-home-infos">
+        <h3>What I'm currently learning: </h3>
+          <ul>
+            <li>Web accessibility</li>
+            <li>React.js</li>
+          </ul>
+      </div>
+    </div>
+
+  </div>
 
 </div>
