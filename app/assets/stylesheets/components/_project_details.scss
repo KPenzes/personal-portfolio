@@ -1,0 +1,14 @@
+.project-details {
+  padding: 16px;
+}
+
+.details {
+  border-bottom: 4px dotted $yellow;
+  margin-bottom: 15px;
+
+}
+.details-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
