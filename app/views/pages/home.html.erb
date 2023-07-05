@@ -6,15 +6,20 @@
     <div class=" card card-home col-11 col-lg-5">
         <div class="card-home-infos d-flex flex-column">
           <h2>Currently working on: </h2>
+
+          <div class="details-flex">
             <div class="card-title">
               <p><%= @project.name %></p>
             </div>
             <div class="label">
               <p><%= @project.label %> project</p>
             </div>
+          </div>
+
             <p><%= @project.description %></p>
+
             <div class="align-items-end">
-            <%= link_to "All projects", projects_path, class:"btn align-self-end" %>
+              <%= link_to "All projects", projects_path, class:"btn align-self-end" %>
             </div>
         </div>
     </div>
@@ -23,14 +28,26 @@
     <div class="card card-home col-11 col-lg-5">
       <div class="card-home-infos">
         <h2>Currently learning: </h2>
-          <div class="card-title">
-            <p>Web accessibility</p>
+          <div class="details-flex">
+            <div class="card-title">
+              <p>Web accessibility</p>
+            </div>
+            <div class="label">
+              <p>Online course</p>
+            </div>
           </div>
             <p>A successful website is an accessible website - I'm learning how to make a website accessible and inclusive.</p>
-          <div class="card-title">
-            <p>React.js</p>
+
+          <div class="details-flex">
+            <div class="card-title">
+              <p>React.js</p>
+            </div>
+            <div class="label">
+              <p>Online course</p>
+            </div>
           </div>
             <p>I'm focusing on expanding and improving my front-end skills, starting with learning the React framework to use with my next project.</p>
+
           <div class="d-flex align-items-end">
             <%= link_to "About me", about_path, class:"btn" %>
           </div>
