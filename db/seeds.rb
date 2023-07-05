@@ -1,3 +1,5 @@
+require "open-uri"
+
 puts "Clearing database..."
 Project.destroy_all
 
@@ -13,6 +15,21 @@ project.project_url = "https://www.front-row.site/"
 project.tagline = "The concert starts here."
 project.description = "A social platform where fans can log concerts they've seen by rating and reviewing their experience, follow other fans, and message them. FrontRow is the final project for Le Wagon's web development bootcamp."
 project.github_url = "https://github.com/daouasof/frontrow"
+
+file = URI.open("https://i.ibb.co/DL47vST/Frontrow-homepage-phone.png")
+project.photos.attach(io: file, filename: "frontrow-homepage.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/SxKnqGs/frontrow-search-by-city-phone.png")
+project.photos.attach(io: file, filename: "frontrow-search-by-city.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/BG6D09d/frontrow-review-with-comments-mobile.png")
+project.photos.attach(io: file, filename: "frontrow-reviews-comments.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/g7CvNRw/frontrow-upcoming-show.png")
+project.photos.attach(io: file, filename: "frontrow-upcoming-show.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/f4qLjzY/frontrow-review-phone.png")
+project.photos.attach(io: file, filename: "frontrow-show-review.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/BHp8hR6/frontrow-profile-mobile.png")
+project.photos.attach(io: file, filename: "frontrow-profile.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/gVRCbT0/frontrow-chat.png")
+project.photos.attach(io: file, filename: "frontrow-chat.png", content_type: "image/png")
 
 project.save!
 

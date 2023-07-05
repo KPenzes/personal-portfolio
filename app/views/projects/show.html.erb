@@ -6,6 +6,10 @@
 
 <p><%= @project.description %></p>
 
+<% @project.photos.each do |photo| %>
+  <%= cl_image_tag photo.key %>
+<% end %>
+
 <ul>
   <% @project.features.each do |feature| %>
     <li><%= feature %></li>
