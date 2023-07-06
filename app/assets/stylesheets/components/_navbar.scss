@@ -6,6 +6,8 @@
   font-size: 20px;
   padding: 3px 15px;
   border-bottom: 3px solid $yellow;
+  display: flex;
+  justify-content: space-between;
 
   .name {
     font-family: $headers-font;
@@ -18,12 +20,15 @@
     }
   }
 
-  .nav-item {
-    color: $navy;
-    padding-left: 12px;
-  }
+  // .nav-item {
+  //   color: $navy;
+  //   padding-left: 12px;
+  // }
 
   .nav-link {
+    color: $navy;
+    padding-left: 12px;
+
     &:hover {
       color: $teal;
     }
