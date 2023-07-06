@@ -15,6 +15,7 @@ project.project_url = "https://pawsh.herokuapp.com/"
 project.tagline = "Fabulous pets, for less."
 project.description = "An web app that allows users to browse pet outfits, rent them, and post their own outfits to rent. Pawsh is an Airbnb clone and one of two final projects for Le Wagon's web development bootcamp."
 project.github_url = "https://github.com/catagalan-mtl/pawsh"
+project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Javascript / Stimulus", "Webpack JS", "Bootstrap", "Postgresql", "Git" ]
 
 file = URI.open("https://i.ibb.co/s5nYNr1/pawsh-homepage.png")
 project.photos.attach(io: file, filename: "pawsh-homepage.png", content_type: "image/png")
@@ -41,18 +42,19 @@ project.project_url = "https://www.front-row.site/"
 project.tagline = "The concert starts here."
 project.description = "A social platform where fans can log concerts they've seen by rating and reviewing their experience, follow other fans, and message them. FrontRow is the final project for Le Wagon's web development bootcamp."
 project.github_url = "https://github.com/daouasof/frontrow"
+project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Javascript / Stimulus", "Webpack JS", "Bootstrap", "Postgresql", "Git" ]
 
 file = URI.open("https://i.ibb.co/DL47vST/Frontrow-homepage-phone.png")
 project.photos.attach(io: file, filename: "frontrow-homepage.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/SxKnqGs/frontrow-search-by-city-phone.png")
 project.photos.attach(io: file, filename: "frontrow-search-by-city.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/BG6D09d/frontrow-review-with-comments-mobile.png")
+project.photos.attach(io: file, filename: "frontrow-show-review.png", content_type: "image/png")
+file = URI.open("https://i.ibb.co/BHp8hR6/frontrow-profile-mobile.png")
 project.photos.attach(io: file, filename: "frontrow-reviews-comments.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/g7CvNRw/frontrow-upcoming-show.png")
 project.photos.attach(io: file, filename: "frontrow-upcoming-show.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/f4qLjzY/frontrow-review-phone.png")
-project.photos.attach(io: file, filename: "frontrow-show-review.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/BHp8hR6/frontrow-profile-mobile.png")
 project.photos.attach(io: file, filename: "frontrow-profile.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/gVRCbT0/frontrow-chat.png")
 project.photos.attach(io: file, filename: "frontrow-chat.png", content_type: "image/png")
@@ -69,8 +71,10 @@ project.start_date = Date.new(2023, 06, 28)
 project.label = "Independent"
 project.name = "Portfolio"
 project.project_url = "https://kpenzes-portfolio-199d9b9ccdf5.herokuapp.com/"
-project.description = "A website that showcases all of my web development projects, providing details and insights."
+project.tagline = "All my project, one place."
+project.description = "A website that showcases all of my web development projects, providing details, languages and skills used, screenshots and raw source code."
 project.github_url = "https://github.com/KPenzes/personal-portfolio"
+project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Bootstrap", "Postgresql", "Git" ]
 
 project.save!
 

@@ -30,6 +30,13 @@
             <% end %>
           </ul>
 
+        <h5>Languages</h5>
+          <ul>
+            <% @project.language.each do |language| %>
+              <li><%= language %></li>
+            <% end %>
+          </ul>
+
         <div class="details-flex">
           <%= link_to "FrontRow", @project.project_url, class:"btn" %>
           <%= link_to "GitHub", @project.github_url, class:"btn" %>
