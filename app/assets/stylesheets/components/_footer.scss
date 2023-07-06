@@ -3,11 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // height: 100px;
+  height: 100px;
   padding: 12px 27px;
   color: $navy;
   margin-top: 10px;
   border-top: 3px solid $yellow;
+  bottom: 0;
   // font-size: 20px;
 }
 .footer-links {
