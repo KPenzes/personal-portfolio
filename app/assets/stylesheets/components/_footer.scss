@@ -1,25 +1,28 @@
 .footer {
   background: $white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 12px 27px;
+  height: 100%;
+  padding: 12px 10px 0px;
   color: $navy;
   margin-top: 10px;
   border-top: 3px solid $yellow;
   bottom: 0;
-  // font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 14px;
+    text-align: end;
+  }
 }
 .footer-links {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 .footer-links a {
   color: $navy;
   text-decoration: none;
-  font-size: 35px;
-  padding: 0px 10px;
+  font-size: 20px;
+  padding: 0px 2px;
 }
 .footer-links a:hover {
   opacity: .9;
