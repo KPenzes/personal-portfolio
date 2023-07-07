@@ -4,7 +4,7 @@
   <div class="row justify-content-center">
 
     <div class="card card-home col-11 col-lg-5">
-        <div class="card-home-infos d-flex flex-column">
+        <div class="card-home-infos">
           <h2>Currently working on </h2>
 
           <div class="details-flex">
@@ -17,11 +17,11 @@
           </div>
 
             <p><%= @project.description %></p>
-
-            <div class="align-items-end">
-              <%= link_to "All projects", projects_path, class:"btn align-self-end" %>
-            </div>
         </div>
+
+            <div class="card-button">
+              <%= link_to "All projects", projects_path, class:"btn" %>
+            </div>
     </div>
 
 
@@ -48,7 +48,7 @@
           </div>
             <p>I'm focusing on expanding and improving my front-end skills, starting with learning the React framework to use with my next project.</p>
 
-          <div class="d-flex align-items-end">
+          <div class="card-button">
             <%= link_to "About me", about_path, class:"btn" %>
           </div>
       </div>
