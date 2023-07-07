@@ -3,7 +3,6 @@
   // height: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
 
   p {
     font-size: 16px;
@@ -23,19 +22,20 @@
 }
 
 .card-button {
-  // display: flex;
-  // height: 20%;
-  // justify-content: center;
-  // align-items: center;
-  // position: absolute;
-  // position: fixed;
-  // bottom: 0;
-  // margin-bottom: 5px;
-  // margin-top: auto;
+  margin-top: auto;
 }
 
 .card-title p {
   font-size: 23px;
   // color: $teal;
   margin-bottom: 0px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+
+  .test-button {
+    margin-top: auto;
+  }
 }
