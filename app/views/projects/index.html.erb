@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <% @projects.each do |project| %>
-        <div class="card project-card col-11 col-lg-5">
+        <div class="card card-home project-card col-11 col-lg-5">
             <div class="project-details">
 
               <div class="details-flex">
@@ -24,7 +24,7 @@
             </div>
 
             <p><%= project.description %></p>
-          <%= link_to "View details", project_path(project), class:"btn align-self-end" %>
+          <%= link_to "View details", project_path(project), class:"btn card-button" %>
         </div>
     <% end %>
   </div>
