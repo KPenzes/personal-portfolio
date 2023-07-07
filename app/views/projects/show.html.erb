@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="card project-card col-11 col-lg-7">
+    <div class="card card-height col-11 col-lg-7">
       <div class="project-details">
         <div class="details-flex">
           <h1><%= @project.name %></h1>
@@ -23,15 +23,6 @@
           <%= link_to @project.name, @project.project_url, class:"btn small-btn mb-2" %>
           <%= link_to "GitHub", @project.github_url, class:"btn small-btn mb-2" %>
         </div>
-
-      <% unless @project.photos.empty? %>
-        <div class="photo-grid">
-          <% @project.photos.each do |photo| %>
-            <%= cl_image_tag photo.key, alt:"Series of screenshots featuring the project's site", class:"screenshot" %>
-          <% end %>
-        </div>
-      <% end %>
-
     </div>
 
     <div class="card col-11 col-lg-3">
@@ -50,6 +41,18 @@
             <li><%= language %></li>
           <% end %>
         </ul>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="card col-12">
+      <% unless @project.photos.empty? %>
+        <div class="photo-grid">
+          <% @project.photos.each do |photo| %>
+            <%= cl_image_tag photo.key, alt:"Series of screenshots featuring the project's site", class:"screenshot" %>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
