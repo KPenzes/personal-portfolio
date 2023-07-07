@@ -1,11 +1,18 @@
 .photo-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  margin-top: 16px;
 }
 
-// .screenshot {
-//   margin: 10px;
-//   width: 40%;
+@media(max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-// }
+.screenshot {
+  // margin: 10px;
+  width: 100%;
+
+}
