@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="card card-height col-11 col-lg-7">
+    <div class="card card-height col-10">
       <div class="project-details">
         <div class="details-flex">
           <h1><%= @project.name %></h1>
@@ -24,28 +24,42 @@
           <%= link_to "GitHub", @project.github_url, class:"btn small-btn mb-2" %>
         </div>
     </div>
+  </div>
 
-    <div class="card col-11 col-lg-3">
+  <div class="row justify-content-center">
+
+    <div class="card card-align col-11 col-lg-5">
       <div class="project-details mt-15">
         <h5>Features</h5>
+      </div>
         <ul>
           <% @project.features.each do |feature| %>
             <li><%= feature %></li>
           <% end %>
         </ul>
-      </div>
+        <div class="d-flex justify-content-center mb-10">
+          <%= link_to @project.name, @project.project_url, class:"btn align-bottom" %>
+        </div>
+    </div>
 
-      <h5>Languages</h5>
+    <div class="card card-align col-11 col-lg-5">
+      <div class="project-details mt-15">
+        <h5>Languages</h5>
+      </div>
         <ul>
           <% @project.language.each do |language| %>
             <li><%= language %></li>
           <% end %>
         </ul>
+      <div class="d-flex justify-content-center mb-10">
+        <%= link_to "GitHub", @project.github_url, class:"btn align-bottom" %>
+      </div>
     </div>
   </div>
 
+
   <div class="row justify-content-center">
-    <div class="card col-12">
+    <div class="card col-11">
       <% unless @project.photos.empty? %>
         <div class="photo-grid">
           <% @project.photos.each do |photo| %>
