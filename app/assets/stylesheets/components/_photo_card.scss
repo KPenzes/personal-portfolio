@@ -1,10 +1,11 @@
-.photo-card {
-
-
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
 }
 
-.screenshot {
-  margin: 10px;
-  // width: 90%;
+// .screenshot {
+//   margin: 10px;
+//   width: 40%;
 
-}
+// }
