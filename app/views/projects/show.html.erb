@@ -24,6 +24,7 @@
           <%= link_to "GitHub", @project.github_url, class:"btn small-btn mb-2" %>
         </div>
 
+      <% unless @project.features.empty? %>
         <div class="project-details mt-15">
           <h5>Features</h5>
         </div>
@@ -32,6 +33,7 @@
             <li><%= feature %></li>
           <% end %>
         </ul>
+      <% end %>
 
         <div class="project-details mt-15">
           <h5>Languages</h5>
