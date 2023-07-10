@@ -1,0 +1,5 @@
+meta_product_name: "KPenzes Portfolio"
+meta_title: "KPenzes Portfolio - All of my projects, all in one place."
+meta_description: "A website that showcases all of my web development projects, providing details, languages and skills used, screenshots and raw source code."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@kpenzes_twitter_account"   # required for Twitter Cards
