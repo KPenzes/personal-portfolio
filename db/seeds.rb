@@ -17,14 +17,8 @@ project.description = "An web app that allows users to browse pet outfits, rent 
 project.github_url = "https://github.com/catagalan-mtl/pawsh"
 project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Javascript / Stimulus", "Webpack JS", "Bootstrap", "Postgresql", "Git" ]
 
-file = URI.open("https://i.ibb.co/s5nYNr1/pawsh-homepage.png")
-project.photos.attach(io: file, filename: "pawsh-homepage.png", content_type: "image/png")
 file = URI.open("https://i.ibb.co/1JC1HV7/Pawsh-homepage-2.png")
 project.photos.attach(io: file, filename: "pawsh-homepage-2.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/Bsd81dP/Pawsh-search-and-map.png")
-project.photos.attach(io: file, filename: "pawsh-search-and-map.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/wNzc1CF/Pawsh-book-outfit.png")
-project.photos.attach(io: file, filename: "pawsh-book-outfit.png", content_type: "image/png")
 
 project.save!
 
@@ -46,18 +40,6 @@ project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Javascript / S
 
 file = URI.open("https://i.ibb.co/DL47vST/Frontrow-homepage-phone.png")
 project.photos.attach(io: file, filename: "frontrow-homepage.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/SxKnqGs/frontrow-search-by-city-phone.png")
-project.photos.attach(io: file, filename: "frontrow-search-by-city.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/BG6D09d/frontrow-review-with-comments-mobile.png")
-project.photos.attach(io: file, filename: "frontrow-show-review.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/BHp8hR6/frontrow-profile-mobile.png")
-project.photos.attach(io: file, filename: "frontrow-reviews-comments.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/g7CvNRw/frontrow-upcoming-show.png")
-project.photos.attach(io: file, filename: "frontrow-upcoming-show.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/f4qLjzY/frontrow-review-phone.png")
-project.photos.attach(io: file, filename: "frontrow-profile.png", content_type: "image/png")
-file = URI.open("https://i.ibb.co/gVRCbT0/frontrow-chat.png")
-project.photos.attach(io: file, filename: "frontrow-chat.png", content_type: "image/png")
 
 project.save!
 
