@@ -50,6 +50,7 @@ puts "Creating Portfolio project..."
 
 project = Project.new
 project.start_date = Date.new(2023, 06, 28)
+project.end_date = Date.new(2023, 07, 10)
 project.label = "Independent"
 project.name = "Portfolio"
 project.project_url = "https://kpenzes-portfolio-199d9b9ccdf5.herokuapp.com/"
@@ -61,3 +62,18 @@ project.language = ["Ruby / Ruby on Rails", "HTML / CSS / SCSS", "Bootstrap", "P
 project.save!
 
 puts "portfolio project created"
+
+puts "Creating react/next project..."
+project = Project.new
+project.start_date = Date.new(2023, 07, 31)
+project.label = "Learning"
+project.name = "Movie library"
+project.project_url = "https://fake-letterboxd.vercel.app/"
+# project.tagline = "Using movies to learn React"
+project.description = "A simple movie library app created alongside online lessons of learning React.js and Next.js"
+project.github_url = "https://github.com/KPenzes/fake-letterboxd"
+project.language = ["Javascript", "React.js", "Next.js"]
+
+project.save!
+
+puts "React project created"
