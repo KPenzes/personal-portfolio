@@ -65,13 +65,13 @@ puts "portfolio project created"
 
 puts "Creating react/next project..."
 project = Project.new
-project.start_date = Date.new(2023, 07, 31)
-project.label = "Learning"
-project.name = "Movie library"
-project.project_url = "https://fake-letterboxd.vercel.app/"
-# project.tagline = "Using movies to learn React"
-project.description = "A simple movie library app created alongside online lessons of learning React.js and Next.js"
-project.github_url = "https://github.com/KPenzes/fake-letterboxd"
+project.start_date = Date.new(2023, 8, 21)
+project.label = "Independent"
+project.name = "The Arcade"
+project.project_url = "#"
+project.tagline = "Games, games, games"
+project.description = "A fun personal project of creating classic computer games like Tetris, using Javascript and React."
+project.github_url = "https://github.com/KPenzes/the-arcade"
 project.language = ["Javascript", "React.js", "Next.js"]
 
 project.save!
